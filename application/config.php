@@ -19,7 +19,7 @@ return [
     // 应用调试模式
     'app_debug'              => true,
     // 应用Trace
-    'app_trace'              => false,
+    'app_trace'              => true,
     // 应用模式状态
     'app_status'             => '',
     // 是否支持多模块
@@ -49,7 +49,7 @@ return [
     // 应用类库后缀
     'class_suffix'           => false,
     // 控制器类后缀
-    'controller_suffix'      => false,
+    'controller_suffix'      => 'Controller',
 
     // +----------------------------------------------------------------------
     // | 模块设置
@@ -154,9 +154,9 @@ return [
     // 错误显示信息,非调试模式有效
     'error_message'          => '页面错误！请稍后再试～',
     // 显示错误信息
-    'show_error_msg'         => false,
+    'show_error_msg'         => true,
     // 异常处理handle类 留空使用 \think\exception\Handle
-    'exception_handle'       => '',
+    'exception_handle'       => '\application\index\exception\Http',
 
     // +----------------------------------------------------------------------
     // | 日志设置
