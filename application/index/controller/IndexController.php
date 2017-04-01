@@ -10,4 +10,6 @@ class IndexController
 	    $view = new View();
 	    return $view->fetch('index');
     }
+
+
 }
