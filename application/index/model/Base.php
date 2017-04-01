@@ -6,7 +6,7 @@
  * Time: 10:32
  */
 
-namespace app\api\model;
+namespace app\index\model;
 
 use think\Model;
 use think\db\Query;
@@ -14,7 +14,7 @@ use think\Session;
 
 /**
  * Class Base
- * @package app\api\model
+ * @package app\index\model
  * @property User $_user User类实例
  */
 class Base extends Model

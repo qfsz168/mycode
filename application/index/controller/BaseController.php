@@ -1,9 +1,7 @@
 <?php
-namespace app\api\controller;
 
-use app\api\model\ApiOauthTokens;
-use app\api\model\ProductAuth;
-use app\api\model\Role;
+namespace app\index\controller;
+
 use think\Cache;
 use think\Config;
 use think\Cookie;
@@ -11,12 +9,11 @@ use think\Request;
 use think\Response;
 use think\Controller;
 
-use app\api\model\User;
 use think\Session;
 
 /**
  * 公共类
- * @package app\api\controller
+ * @package app\index\controller
  */
 class BaseController extends Controller
 {
@@ -25,209 +22,6 @@ class BaseController extends Controller
 	protected static $_uid   = null; //用户信息
 	protected static $_token = null; //用户令牌
 
-	/**
-	 * @var array 先行方法列表
-	 */
-	protected $beforeActionList = ['GetUserInfo',];
-
-	/**
-	 * 先行方法 - 验证令牌 并 获取&防止异地登陆$保存用户信息
-	 * @author 王崇全
-	 * @date
-	 * @return void
-	 */
-	protected function GetUserInfo()
-	{
-		$request = Request::instance();
-
-		self::$_token = $request->param("ACCESS-TOKEN/s");
-		if (!self::$_token)
-		{
-			self::$_token = null;
-		}
-
-		$ip = $request->ip();
-		$ua = $request->header("user-agent");
-
-		if (isset(self::$_token))
-		{ //用户请求
-
-			//s1 获取userid并缓存
-			$aot = new ApiOauthTokens();
-			$uid = $aot->GetUserid(self::$_token);
-			if (is_null($uid))
-			{
-				Response::create($this->R(\EC::ACCESSTOKEN_ERROR), "json")
-					->send();
-				die();
-			}
-
-			self::$_uid = $uid;//供控制器使用
-			Session::set("user_id", $uid);//供模型使用
-
-			//s2 防止多登录(前提,每个终端的令牌都不一样)
-			$cacheKeyUserLoginPCInfo = CACHE_PREFIX_USER_LOGIN_PC_INFO.$uid;
-
-			$userLoginPCInfo = Cache::get($cacheKeyUserLoginPCInfo);
-			if ($userLoginPCInfo === false)
-			{ //未登录过
-				Cache::set($cacheKeyUserLoginPCInfo, [
-					$ip,
-					$ua,
-				], 0);
-			}
-			else
-			{ //登录过
-				if ($ip != $userLoginPCInfo[0] || $ua != $userLoginPCInfo[1])
-				{ //非同一终端
-
-					//剔除其他终端
-					$aot    = new ApiOauthTokens();
-					$tokens = $aot->GetOtherTokens($uid, self::$_token);
-					if (is_array($tokens))
-					{
-						foreach ($tokens as $token)
-						{
-							Cache::rm(CACHE_PREFIX_T2U.$token);
-							$aot->DelByToken($token);
-						}
-					}
-				}
-			}
-
-			//s3 获取用户信息并缓存
-			$user     = new User();
-			$userInfo = $user->GetInfo($uid);
-			if (!$user)
-			{
-				Response::create($this->R(\EC::USER_NOTEXIST_ERROR), "json")
-					->send();
-				die();
-			}
-
-			$userInfo["ip"] = $ip;
-			$userInfo["ua"] = $ua;
-
-			self::$_uinfo = $userInfo;//供控制器使用
-			Session::set("user_info", $userInfo);//供模型使用
-		}
-		else
-		{ //匿名用户请求
-			if (!(Cookie::get("uic")))
-			{
-				Cookie::set("uic", make_uic(), 3600 * 24 * 365 * 10);
-			}
-		}
-	}
-
-	/**
-	 * 身份识别 - 必有有令牌
-	 * @author 王崇全
-	 * @date
-	 * @return void
-	 */
-	protected function NeedToken()
-	{
-		if (is_null(self::$_token))
-		{
-			$r = [
-				"code" => \EC::URL_ACCESSTOKEN_NOTEXIST_ERROR,
-				"msg"  => "缺少令牌",
-			];
-			if (Request::instance()
-				->param("jsonp_callback/s")
-			)
-			{
-				// ThinkPHP bug
-				// Response类未处理jsonp类型 -- thinkphp/library/think/response/Jsonp.php
-				// 当前台传递了 ['var_jsonp_handler' => 'jsonp_callback'] 参数时，表示是jsonp请求；否则按照 json 请求处理
-				Response::create($r, "jsonp", \EC::SUCCESS, [], ['var_jsonp_handler' => Config::get('var_jsonp_handler')])
-					->send();
-			}
-			else
-			{
-				Response::create($r, "json", \EC::SUCCESS)
-					->send();
-			}
-			exit();
-		}
-	}
-
-	/**
-	 * 身份识别 - 是否是管理员
-	 * @author 王崇全
-	 * @date
-	 * @return bool
-	 */
-	protected function IsAdmin()
-	{
-		if (is_null(self::$_uinfo))
-		{
-			return false;
-		}
-
-		if (@self::$_uinfo["name"] == "admin")
-		{
-			return true;
-		}
-
-		/*$role  = new Role();
-		$rinfo = $role->GetInfo(@self::$_uinfo["roleid"], "r");
-		if ($rinfo["type"] == Role::TYPE_ADMIN)
-		{
-			return true;
-		}*/
-
-		return false;
-	}
-
-	/**
-	 * Controller->Action方法执行时，是否需要检测产品授权信息
-	 */
-	protected function ProductNeedCheck()
-	{
-		$list = [
-			'Channel' => ['channellist'],
-			'WebSite' => [
-				'productregister',
-				'productinfo',
-				'getlogoicon',
-				'getconfig',
-			],
-			'Common'  => ['qr'],
-		];
-
-		$request    = Request::instance();
-		$controller = $request->controller();
-		$action     = $request->action();
-		foreach ($list as $controllerKey => $actionList)
-		{
-			foreach ($actionList as $actionKey)
-			{
-				if (($controllerKey == $controller) && ($actionKey == $action))
-				{
-					return false;
-				}
-			}
-		}
-
-		return true;
-	}
-
-	/**
-	 * 检测产品授权信息
-	 */
-	private function CheckProductRegister()
-	{
-		if ($this->ProductNeedCheck())
-		{
-			$rtn = ProductAuth::Check();
-			if ($rtn != 0)
-			{
-				return $this->R($rtn);
-			}
-		}
-	}
 
 	/**
 	 * 构造器
@@ -243,8 +37,6 @@ class BaseController extends Controller
 			// P3P header允许跨域访问隐私数据
 			header('P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"');
 		}
-
-		$this->CheckProductRegister();
 	}
 
 	/**
@@ -258,6 +50,12 @@ class BaseController extends Controller
 	{
 		return $this->R(\EC::URL_ERROR, strtolower(" ".$request->domain()."/".$request->module()."/".$request->controller()."/".$request->action()." 不存在"), "请求地址错误");
 	}
+
+	/**
+	 * @var array 先行方法列表
+	 */
+	protected $beforeActionList = ['GetUserInfo',];
+
 
 	/**
 	 * 重写 验证数据 方法
@@ -413,9 +211,161 @@ class BaseController extends Controller
 		exit();
 	}
 
-	protected function RmCacheUserInfo()
+	/**
+	 * 先行方法 - 验证令牌 并 获取&防止异地登陆$保存用户信息
+	 * @author 王崇全
+	 * @date
+	 * @return void
+	 */
+	protected function GetUserInfo()
 	{
-		$cacheKeyUser = CACHE_PREFIX_USER_INFO.self::$_uid;
-		Cache::rm($cacheKeyUser);
+		$request = Request::instance();
+
+		self::$_token = $request->param("ACCESS-TOKEN/s");
+		if (!self::$_token)
+		{
+			self::$_token = null;
+		}
+
+		$ip = $request->ip();
+		$ua = $request->header("user-agent");
+
+		if (isset(self::$_token))
+		{ //用户请求
+
+			//s1 获取userid并缓存
+			$aot = new ApiOauthTokens();
+			$uid = $aot->GetUserid(self::$_token);
+			if (is_null($uid))
+			{
+				Response::create($this->R(\EC::ACCESSTOKEN_ERROR), "json")
+					->send();
+				die();
+			}
+
+			self::$_uid = $uid;//供控制器使用
+			Session::set("user_id", $uid);//供模型使用
+
+			//s2 防止多登录(前提,每个终端的令牌都不一样)
+			$cacheKeyUserLoginPCInfo = CACHE_PREFIX_USER_LOGIN_PC_INFO.$uid;
+
+			$userLoginPCInfo = Cache::get($cacheKeyUserLoginPCInfo);
+			if ($userLoginPCInfo === false)
+			{ //未登录过
+				Cache::set($cacheKeyUserLoginPCInfo, [
+					$ip,
+					$ua,
+				], 0);
+			}
+			else
+			{ //登录过
+				if ($ip != $userLoginPCInfo[0] || $ua != $userLoginPCInfo[1])
+				{ //非同一终端
+
+					//剔除其他终端
+					$aot    = new ApiOauthTokens();
+					$tokens = $aot->GetOtherTokens($uid, self::$_token);
+					if (is_array($tokens))
+					{
+						foreach ($tokens as $token)
+						{
+							Cache::rm(CACHE_PREFIX_T2U.$token);
+							$aot->DelByToken($token);
+						}
+					}
+				}
+			}
+
+			//s3 获取用户信息并缓存
+			$user     = new User();
+			$userInfo = $user->GetInfo($uid);
+			if (!$user)
+			{
+				Response::create($this->R(\EC::USER_NOTEXIST_ERROR), "json")
+					->send();
+				die();
+			}
+
+			$userInfo["ip"] = $ip;
+			$userInfo["ua"] = $ua;
+
+			self::$_uinfo = $userInfo;//供控制器使用
+			Session::set("user_info", $userInfo);//供模型使用
+		}
+		else
+		{ //匿名用户请求
+			if (!(Cookie::get("uic")))
+			{
+				Cookie::set("uic", make_uic(), 3600 * 24 * 365 * 10);
+			}
+		}
 	}
+
+	/**
+	 * 身份识别 - 必有有令牌
+	 * @author 王崇全
+	 * @date
+	 * @return void
+	 */
+	protected function NeedToken()
+	{
+		if (is_null(self::$_token))
+		{
+			$r = [
+				"code" => \EC::URL_ACCESSTOKEN_NOTEXIST_ERROR,
+				"msg"  => "缺少令牌",
+			];
+			if (Request::instance()
+				->param("jsonp_callback/s")
+			)
+			{
+				// ThinkPHP bug
+				// Response类未处理jsonp类型 -- thinkphp/library/think/response/Jsonp.php
+				// 当前台传递了 ['var_jsonp_handler' => 'jsonp_callback'] 参数时，表示是jsonp请求；否则按照 json 请求处理
+				Response::create($r, "jsonp", \EC::SUCCESS, [], ['var_jsonp_handler' => Config::get('var_jsonp_handler')])
+					->send();
+			}
+			else
+			{
+				Response::create($r, "json", \EC::SUCCESS)
+					->send();
+			}
+			exit();
+		}
+	}
+
+	/**
+	 * 身份识别 - 是否是管理员
+	 * @author 王崇全
+	 * @date
+	 * @return bool
+	 */
+//	protected function IsAdmin()
+//	{
+//		if (is_null(self::$_uinfo))
+//		{
+//			return false;
+//		}
+//
+//		if (@self::$_uinfo["name"] == "admin")
+//		{
+//			return true;
+//		}
+//
+//		/*$role  = new Role();
+//		$rinfo = $role->GetInfo(@self::$_uinfo["roleid"], "r");
+//		if ($rinfo["type"] == Role::TYPE_ADMIN)
+//		{
+//			return true;
+//		}*/
+//
+//		return false;
+//	}
+//
+//
+//	protected function RmCacheUserInfo()
+//	{
+//		$cacheKeyUser = CACHE_PREFIX_USER_INFO.self::$_uid;
+//		Cache::rm($cacheKeyUser);
+//	}
 }

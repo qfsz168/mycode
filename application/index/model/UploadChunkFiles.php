@@ -6,7 +6,7 @@
  * Time: 15:25
  */
 
-namespace app\api\model;
+namespace app\index\model;
 
 class UploadChunkFiles
 {

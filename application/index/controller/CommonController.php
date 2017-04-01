@@ -1,8 +1,8 @@
 <?php
 
-namespace app\api\controller;
+namespace app\index\controller;
 
-use app\api\model\Upload;
+use app\index\model\Upload;
 use QRcode;
 use think\captcha\Captcha;
 

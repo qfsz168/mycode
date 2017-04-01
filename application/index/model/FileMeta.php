@@ -1,5 +1,5 @@
 <?php
-namespace app\api\model;
+namespace app\index\model;
 
 use http\AmapRestAPI;
 

@@ -9,6 +9,9 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
+//是否是ie8
+define("IE8", (strpos(@$_SERVER["HTTP_USER_AGENT"], "MSIE 8.0") || strpos(@$_SERVER["HTTP_USER_AGENT"], "Flash")) ? true : false);
+
 return [
     // +----------------------------------------------------------------------
     // | 应用设置

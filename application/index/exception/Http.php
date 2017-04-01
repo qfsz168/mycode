@@ -6,7 +6,7 @@
  * Time: 10:05
  */
 
-namespace app\api\exception;
+namespace app\index\exception;
 
 use think\Config;
 use think\exception\Handle;

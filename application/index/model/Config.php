@@ -1,7 +1,7 @@
 <?php
-namespace app\api\model;
+namespace app\index\model;
 
-use app\api\controller\WebSite;
+use app\index\controller\WebSite;
 use think\Cache;
 
 class Config

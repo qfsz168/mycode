@@ -6,7 +6,7 @@
  * Time: 15:32
  */
 
-namespace app\api\model;
+namespace app\index\model;
 
 use http\ApacheAuthToken;
 use think\Image;

@@ -1,12 +1,12 @@
 <?php
-namespace app\api\controller;
+namespace app\index\controller;
 
-use app\api\model\File;
-use app\api\model\FileHash;
-use app\api\model\FileVrHot;
-use app\api\model\StreamRoomVrHot;
-use app\api\model\TaskConvert;
-use app\api\model\Tmpfile;
+use app\index\model\File;
+use app\index\model\FileHash;
+use app\index\model\FileVrHot;
+use app\index\model\StreamRoomVrHot;
+use app\index\model\TaskConvert;
+use app\index\model\Tmpfile;
 use think\Db;
 use think\Exception;
 
