@@ -511,4 +511,44 @@ class MyImagick
 		$this->image->flipImage();
 	} // 垂直翻转
 
+	/**
+	 * 处理gif图片 需要对每一帧图片处理
+	 * @author 王崇全
+	 * @date
+	 * @param int  $t_w    缩放宽
+	 * @param int  $t_h    缩放高
+	 * @param bool $isCrop 是否裁剪
+	 * @param int  $c_w    裁剪宽
+	 * @param int  $c_h    裁剪高
+	 * @param int  $c_x    裁剪坐标 x
+	 * @param int  $c_y    裁剪坐标 y
+	 * @return void
+	 */
+	private function resize_gif($t_w, $t_h, $isCrop = false, $c_w = 0, $c_h = 0, $c_x = 0, $c_y = 0)
+	{
+		$dest              = new Imagick();
+		$color_transparent = new ImagickPixel("transparent"); //透明色
+		foreach ($this->image as $img)
+		{
+			$page = $img->getImagePage();
+			$tmp  = new Imagick();
+			$tmp->newImage($page['width'], $page['height'], $color_transparent, 'gif');
+			$tmp->compositeImage($img, Imagick::COMPOSITE_OVER, $page['x'], $page['y']);
+
+			$tmp->thumbnailImage($t_w, $t_h, true);
+			if ($isCrop)
+			{
+				$tmp->cropImage($c_w, $c_h, $c_x, $c_y);
+			}
+
+			$dest->addImage($tmp);
+			$dest->setImagePage($tmp->getImageWidth(), $tmp->getImageHeight(), 0, 0);
+			$dest->setImageDelay($img->getImageDelay());
+			$dest->setImageDispose($img->getImageDispose());
+
+		}
+		$this->image->destroy();
+		$this->image = $dest;
+	}
+
 }

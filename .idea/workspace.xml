@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec497bf5-3825-4b9d-acfb-ed5eee64ea29" name="默认" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/controller/IndexController.php" afterPath="$PROJECT_DIR$/application/index/controller/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extend/MyImagick.php" afterPath="$PROJECT_DIR$/extend/MyImagick.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,18 +37,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/index/controller/IndexController.php">
+      <file leaf-file-name="MyImagick.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/extend/MyImagick.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state relative-caret-position="481">
+              <caret line="551" column="5" lean-forward="false" selection-start-line="551" selection-start-column="5" selection-end-line="551" selection-end-column="5" />
               <folding>
-                <element signature="e#40#59#0#PHP" expanded="true" />
-                <element signature="e#102#186#0#PHP" expanded="true" />
-                <element signature="e#189#593#0#PHP" expanded="true" />
-                <element signature="e#596#1006#0#PHP" expanded="true" />
-                <element signature="e#1009#1393#0#PHP" expanded="true" />
-                <element signature="e#1246#1343#1#PHP" expanded="true" />
+                <element signature="e#11597#12173#0#PHP" expanded="false" />
+                <element signature="e#11897#11964#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -92,6 +89,7 @@
         <option value="$PROJECT_DIR$/application/config.php" />
         <option value="$PROJECT_DIR$/public/http_test.php" />
         <option value="$PROJECT_DIR$/application/index/controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/extend/MyImagick.php" />
       </list>
     </option>
   </component>
@@ -159,7 +157,8 @@
   </component>
   <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="192.168.1.116" port="9090" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+    <option name="x" value="328" />
+    <option name="y" value="165" />
     <option name="width" value="1292" />
     <option name="height" value="745" />
   </component>
@@ -181,8 +180,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,25 +214,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycode" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workerman" />
+              <option name="myItemId" value="extend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,8 +232,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\phpStudy\WWW\mycode\runtime" />
       <recent name="D:\phpStudy\WWW\mycode\extend" />
+      <recent name="D:\phpStudy\WWW\mycode\runtime" />
       <recent name="D:\phpStudy\WWW\mycode" />
       <recent name="D:\phpStudy\WWW\mycode\vendor" />
       <recent name="D:\phpStudy\WWW\mycode\application\index\model" />
@@ -364,6 +345,7 @@
       <workItem from="1491353497579" duration="6877000" />
       <workItem from="1491526767085" duration="193000" />
       <workItem from="1491527105627" duration="1577000" />
+      <workItem from="1492135979863" duration="679000" />
     </task>
     <task id="LOCAL-00001" summary="修改忽略配置">
       <created>1491018681258</created>
@@ -428,25 +410,33 @@
       <option name="project" value="LOCAL" />
       <updated>1491036098454</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="+ Class MyImagick">
+      <created>1492136052230</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1492136052230</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23221000" />
+    <option name="totallyTimeSpent" value="23900000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1292" height="745" extended-state="0" />
+    <frame x="328" y="165" width="1292" height="745" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15746753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1599026" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13965885" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.86353946" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.86353946" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3646409" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -485,7 +475,8 @@
     <MESSAGE value="修改忽略配置" />
     <MESSAGE value="tmp" />
     <MESSAGE value="+ 接受srs回调请求的处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ 接受srs回调请求的处理" />
+    <MESSAGE value="+ Class MyImagick" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ Class MyImagick" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -501,21 +492,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/index/controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#59#0#PHP" expanded="true" />
-            <element signature="e#102#186#0#PHP" expanded="true" />
-            <element signature="e#189#593#0#PHP" expanded="true" />
-            <element signature="e#596#1006#0#PHP" expanded="true" />
-            <element signature="e#1009#1393#0#PHP" expanded="true" />
-            <element signature="e#1246#1343#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -953,9 +929,9 @@
         <state relative-caret-position="282">
           <caret line="441" column="30" lean-forward="false" selection-start-line="441" selection-start-column="30" selection-end-line="441" selection-end-column="30" />
           <folding>
-            <element signature="e#7716#8073#0#PHP" expanded="true" />
-            <element signature="e#8141#8322#0#PHP" expanded="true" />
-            <element signature="e#40393#41283#0#PHP" expanded="true" />
+            <element signature="e#7716#8073#0#PHP" expanded="false" />
+            <element signature="e#8141#8322#0#PHP" expanded="false" />
+            <element signature="e#40393#41283#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -969,8 +945,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <element signature="e#40#59#0#PHP" expanded="true" />
             <element signature="e#102#186#0#PHP" expanded="true" />
@@ -978,6 +954,17 @@
             <element signature="e#596#1006#0#PHP" expanded="true" />
             <element signature="e#1009#1393#0#PHP" expanded="true" />
             <element signature="e#1246#1343#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/MyImagick.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="551" column="5" lean-forward="false" selection-start-line="551" selection-start-column="5" selection-end-line="551" selection-end-column="5" />
+          <folding>
+            <element signature="e#11597#12173#0#PHP" expanded="false" />
+            <element signature="e#11897#11964#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
