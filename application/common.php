@@ -791,3 +791,53 @@ function get_uic(): string
 
 	return $openid??guid();
 }
+
+/**
+ * 递归地合并两个数组
+ * @author 王崇全
+ * 如果输入的数组中有相同的字符串键名，则这些值会被合并到一个数组中去，这将递归下去，
+ * 因此如果一个值本身是一个数组，本函数将按照相应的条目把它合并为另一个数组。
+ * 如果数组具有相同的数组键名：此键名对应的键值完全相同的话就覆盖；不完全相同就附加。
+ * @param array $arr1
+ * @param array $arr2
+ * @return array
+ */
+function arrays_merge_recursive(array $arr1, array $arr2)
+{
+	foreach ($arr2 as $key => $value)
+	{
+		if (is_array($value) && array_key_exists($key, $arr1))
+		{
+			$arr1[$key] = arrays_merge_recursive($arr1[$key], $arr2[$key]);
+		}
+		else
+		{
+			$arr1[$key] = $value;
+		}
+
+	}
+
+	return $arr1;
+}
+
+/**
+ * 构造数组
+ * 以某个一维数组的值为键名，纵深的创建数据
+ * @author 王崇全
+ * @date   2017.04.25 16:02
+ * @param array $arr
+ * @param mixed $value
+ * @return array
+ */
+function array_create_by_values(array $arr, $value)
+{
+	$tmpArr = $value;
+	while (!is_null($key = array_pop($arr)))
+	{
+		$tmpArr = [
+			$key => $tmpArr,
+		];
+	}
+
+	return $tmpArr;
+}
