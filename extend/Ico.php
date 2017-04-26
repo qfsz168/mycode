@@ -49,13 +49,16 @@ class Ico
 		$gd_image_array = array($resize_im);
 		$icon_data      = $this->GD2ICOstring($gd_image_array);
 
-		$newFile = $newFile??basename($pngFile).".ico";
+		if (is_null($newFile))
+		{
+			unlink($file);
+			$newFile = basename($pngFile).".ico";
+		}
+
 		if (!file_put_contents($newFile, $icon_data))
 		{
 			return "";
 		}
-
-		unlink($file);
 
 		return $newFile;
 	}
