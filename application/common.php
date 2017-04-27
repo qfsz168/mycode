@@ -841,3 +841,54 @@ function array_create_by_values(array $arr, $value)
 
 	return $tmpArr;
 }
+
+/**
+ * 小文件下载
+ * @author 王崇全
+ * @date
+ * @param string      $file
+ * @param string|null $downloadFileName
+ * @return void
+ */
+function download_file(string $file, string $downloadFileName = null)
+{
+	if (is_file($file))
+	{
+		if (!isset($downloadFileName))
+		{
+			$pathInfo         = pathinfo($file);
+			$ext              = isset($pathInfo["extension"]) ? ".".$pathInfo["extension"] : "";
+			$downloadFileName = $pathInfo["basename"].$ext;
+		}
+
+		header('Content-Description: File Transfer');
+		header('Content-Type: application/octet-stream');
+		header('Content-Disposition: attachment; filename='.$downloadFileName);
+		header('Content-Transfer-Encoding: binary');
+		header('Expires: 0');
+		header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+		header('Pragma: public');
+		header('Content-Length: '.filesize($file));
+		header("Accept-Length:".filesize($file));
+
+		$ua = $_SERVER["HTTP_USER_AGENT"];
+		if (preg_match("/MSIE/", $ua))
+		{
+			$encoded_filename = rawurlencode($downloadFileName);
+			@header('Content-Disposition: attachment; filename="'.$encoded_filename.'"');
+		}
+		else if (preg_match("/Firefox/", $ua))
+		{
+			@header("Content-Disposition: attachment; filename*=\"utf8''".$downloadFileName.'"');
+		}
+		else
+		{
+			@header('Content-Disposition: attachment; filename="'.$downloadFileName.'"');
+		}
+
+		ob_clean();
+		flush();
+		readfile($file);
+		exit;
+	}
+}
