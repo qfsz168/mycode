@@ -1,0 +1,103 @@
+﻿<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>主页</title>
+	{load href="/static/plugin/layui/css/layui.css"}
+	
+	{load href="/static/plugin/jquery-old.js"}
+	{load href="/static/plugin/layui/layui.js"}
+	
+	{load href="/static/plugin/web-socket-js/swfobject.js"}
+	{load href="/static/plugin/web-socket-js/web_socket.js"}
+
+</head>
+<body>
+
+<form class="layui-form layui-form-pane" action="">
+	<div class="layui-form-item layui-form-text">
+		<label class="layui-form-label">历史消息</label>
+		<div class="layui-input-block">
+			<textarea id="history" placeholder="" class="layui-textarea"></textarea>
+		</div>
+	</div>
+	<div class="layui-form-item layui-form-text">
+		<label class="layui-form-label">请输入内容</label>
+		<div class="layui-input-block">
+			<textarea name="content" placeholder="请输入内容" class="layui-textarea"></textarea>
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<button class="layui-btn" lay-submit="" lay-filter="demo2">发送</button>
+	</div>
+</form>
+
+<script>
+    // Let the library know where WebSocketMain.swf is:
+    WEB_SOCKET_SWF_LOCATION = "../../static/plugin/web-socket-js/WebSocketMain.swf";
+    WEB_SOCKET_DEBUG = true;
+    
+    $(function () {
+        layui.use(['form', 'layedit'], function () {
+            var form = layui.form(), layer = layui.layer;
+
+            //监听提交
+            form.on('submit(demo2)', function (data) {
+                $.post('send', data.field, function (e) {
+                   $("#history").append(e+"\r\n");
+                });
+                return false;
+            });
+
+        });
+
+       
+        
+        /**
+         * 与GatewayWorker建立websocket连接，域名和端口改为你实际的域名端口，
+         * 其中端口为Gateway端口，即start_gateway.php指定的端口。
+         * start_gateway.php 中需要指定websocket协议，像这样
+         * $gateway = new Gateway(websocket://0.0.0.0:7272);
+         */
+        ws = new WebSocket("ws://123.207.120.116:8282");
+//        ws = new WebSocket("ws://121.40.165.18:8088");
+        // 服务端主动推送消息时会触发这里的onmessage
+        ws.onmessage = function (e) {
+            var data="";
+            try
+            {
+                // json数据转换成js对象
+                data = eval("(" + e.data + ")");
+            }
+            catch(err)
+            {
+                //在此处理错误
+            }
+
+            console.log(data);
+           
+            var type = data.type || '';
+            switch (type) {
+                // Events.php中返回的init类型的消息，将client_id发给后台进行uid绑定
+                case 'init':
+                    // 利用jquery发起ajax请求，将client_id发给后端进行uid绑定
+                    $.post('bind', {client_id: data.client_id}, function (data) {
+                        console.log(data);
+                    }, 'json');
+                    break;
+                // 当mvc框架调用GatewayClient发消息时直接alert出来
+                default :
+                    layer.msg(e.data);
+                    $("#history").append(e.data+"\r\n");
+            }
+        };
+    });
+</script>
+
+</body>
+</html>
+
+
+
