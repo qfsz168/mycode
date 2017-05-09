@@ -892,3 +892,71 @@ function download_file(string $file, string $downloadFileName = null)
 		exit;
 	}
 }
+
+/**
+ * 数组转树-非递归
+ * @author 王崇全
+ * @date
+ * @param array  $tree
+ * @param string $pid
+ * @return array
+ */
+function get_tree(array $tree, string $pid)
+{
+	//目标数组
+	$rest = [];
+
+	//索引数组，用于记录节点在目标数组的位置
+	$index = [];
+
+	foreach ($tree as $node)
+	{
+		//给每个节点附加一个child项
+		$node["child"] = [];
+		unset($node["leftcode"]);
+		unset($node["rightcode"]);
+
+		if ($node["parentid"] == $pid)
+		{
+			$i = count($rest);
+
+			$rest[$i] = $node;
+
+			$index[$node["groupid"]] =& $rest[$i];
+		}
+		else
+		{
+			$i = count($index[$node["parentid"]]["child"]);
+
+			$index[$node["parentid"]]["child"][$i] = $node;
+
+			$index[$node["groupid"]] =& $index[$node["parentid"]]["child"][$i];
+		}
+	}
+
+	return $rest;
+}
+
+/**
+ * 数组转树-递归
+ * @author 王崇全
+ * @date
+ * @param $array
+ * @param $pid
+ * @return array
+ */
+function get_tree_recursion($array, $pid)
+{
+	$tree = [];
+	foreach ($array as $v)
+	{
+		if ($v['parentid'] == $pid)
+		{
+			//父亲找到儿子
+			$v['child'] = get_tree_recursion($array, $v['groupid']);
+			$tree[]     = $v;
+		}
+	}
+
+	return $tree;
+}

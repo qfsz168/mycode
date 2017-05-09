@@ -2,221 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec497bf5-3825-4b9d-acfb-ed5eee64ea29" name="默认" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/WebSocketMain.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/WebSocketMainInsecure.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket/web-socket.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/admin/controller/ApiController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/admin/controller/BaseController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/admin/controller/ErrorController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/admin/controller/HeartbeatController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/admin/controller/HookController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/admin/exception/Http.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/admin/model/SrsApi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/home/controller/IndexController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/home/exception/Http.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/home/view/index/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/home/view/index/index1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/home/view/index/index2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/home/view/index/index3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayClient/Gateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayClient/MIT-LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayClient/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayClient/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/Applications/YourApp/Events.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/Applications/YourApp/start_businessworker.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/Applications/YourApp/start_flash_support.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/Applications/YourApp/start_gateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/Applications/YourApp/start_register.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/start.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/autoload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/composer/ClassLoader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/composer/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/composer/autoload_classmap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/composer/autoload_namespaces.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/composer/autoload_psr4.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/composer/autoload_real.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/composer/autoload_static.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/composer/installed.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/_opt_GatewayWorker_start.php.pid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/gateway-worker/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/gateway-worker/MIT-LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/gateway-worker/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/gateway-worker/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/gateway-worker/src/Gateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/gateway-worker/src/Lib/Context.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/gateway-worker/src/Lib/Db.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/gateway-worker/src/Lib/DbConnection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/gateway-worker/src/Lib/Gateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/gateway-worker/src/Protocols/GatewayProtocol.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/gateway-worker/src/Register.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Autoloader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Connection/AsyncTcpConnection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Connection/ConnectionInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Connection/UdpConnection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Events/Ev.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Events/Event.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Events/EventInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Events/Libevent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Events/React.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Events/React/ExtEventLoop.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Events/React/LibEventLoop.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Events/React/StreamSelectLoop.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Events/Select.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Lib/Constants.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Lib/Timer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/MIT-LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Protocols/Frame.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Protocols/Http.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Protocols/Http/mime.types" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Protocols/ProtocolInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Protocols/Text.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Protocols/Websocket.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Protocols/Ws.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/WebServer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/Worker.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/GatewayWorker/vendor/workerman/workerman/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/jquery-old.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/socket.io.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/NEWS.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/build.properties.sample" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/build.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/build.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/src/net/gimite/websocket/IWebSocketLogger.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/src/net/gimite/websocket/WebSocket.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/src/net/gimite/websocket/WebSocketEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/src/net/gimite/websocket/WebSocketFrame.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/src/net/gimite/websocket/WebSocketMain.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/src/net/gimite/websocket/WebSocketMainInsecure.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/adobe/net/proxies/RFC2817Socket.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/gsolo/encryption/MD5.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/gsolo/encryption/SHA1.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/Crypto.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/cert/MozillaRootCertificates.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/cert/X509Certificate.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/cert/X509CertificateCollection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/hash/HMAC.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/hash/IHMAC.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/hash/IHash.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/hash/MAC.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/hash/MD2.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/hash/MD5.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/hash/SHA1.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/hash/SHA224.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/hash/SHA256.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/hash/SHABase.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/prng/ARC4.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/prng/IPRNG.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/prng/Random.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/prng/TLSPRF.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/rsa/RSAKey.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/AESKey.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/BlowFishKey.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/CBCMode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/CFB8Mode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/CFBMode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/CTRMode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/DESKey.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/ECBMode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/ICipher.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/IMode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/IPad.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/IStreamCipher.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/ISymmetricKey.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/IVMode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/NullPad.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/OFBMode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/PKCS5.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/SSLPad.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/SimpleIVMode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/TLSPad.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/TripleDESKey.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/XTeaKey.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/aeskey.pl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/symmetric/dump.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/AESKeyTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/ARC4Test.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/BigIntegerTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/BlowFishKeyTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/CBCModeTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/CFB8ModeTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/CFBModeTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/CTRModeTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/DESKeyTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/ECBModeTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/HMACTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/ITestHarness.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/MD2Test.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/MD5Test.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/OFBModeTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/RSAKeyTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/SHA1Test.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/SHA224Test.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/SHA256Test.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/TLSPRFTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/TestCase.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/TripleDESKeyTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tests/XTeaKeyTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/BulkCiphers.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/CipherSuites.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/IConnectionState.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/ISecurityParameters.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/KeyExchanges.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/MACs.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/SSLConnectionState.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/SSLEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/SSLSecurityParameters.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/TLSConfig.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/TLSConnectionState.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/TLSEngine.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/TLSError.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/TLSEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/TLSSecurityParameters.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/TLSSocket.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/TLSSocketEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/crypto/tls/TLSTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/math/BarrettReduction.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/math/BigInteger.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/math/ClassicReduction.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/math/IReduction.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/math/MontgomeryReduction.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/math/NullReduction.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/math/bi_internal.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/ArrayUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/Base64.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/Hex.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/Memory.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/der/ByteString.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/der/DER.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/der/IAsn1Type.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/der/Integer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/der/OID.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/der/ObjectIdentifier.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/der/PEM.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/der/PrintableString.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/der/Sequence.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/der/Set.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/der/Type.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/flash-src/third-party/com/hurlant/util/der/UTCTime.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/sample.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/src/swfobject.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/swfobject.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket-js/web_socket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket/policy.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket/server.njs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/plugin/web-socket/web-socket.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/index/model/Group.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/js/index.js" afterPath="$PROJECT_DIR$/public/static/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/common.php" afterPath="$PROJECT_DIR$/application/common.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/model/Base.php" afterPath="$PROJECT_DIR$/application/index/model/Base.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -249,7 +38,115 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/common.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="894" column="0" lean-forward="true" selection-start-line="894" selection-start-column="0" selection-end-line="894" selection-end-column="0" />
+              <folding>
+                <element signature="e#252#676#0#PHP" expanded="false" />
+                <element signature="e#327#676#0#PHP" expanded="false" />
+                <element signature="e#866#914#0#PHP" expanded="false" />
+                <element signature="e#916#979#0#PHP" expanded="false" />
+                <element signature="e#1231#1456#0#PHP" expanded="false" />
+                <element signature="e#1254#1368#0#PHP" expanded="false" />
+                <element signature="e#1262#1367#1#PHP" expanded="false" />
+                <element signature="e#1374#1456#0#PHP" expanded="false" />
+                <element signature="e#1557#1784#0#PHP" expanded="false" />
+                <element signature="e#1613#1781#0#PHP" expanded="false" />
+                <element signature="e#2094#2140#0#PHP" expanded="false" />
+                <element signature="e#2176#2828#0#PHP" expanded="false" />
+                <element signature="e#2267#2760#0#PHP" expanded="false" />
+                <element signature="e#2340#2406#0#PHP" expanded="false" />
+                <element signature="e#2484#2756#0#PHP" expanded="false" />
+                <element signature="e#2616#2756#0#PHP" expanded="false" />
+                <element signature="e#2795#2828#0#PHP" expanded="false" />
+                <element signature="e#3604#3646#0#PHP" expanded="false" />
+                <element signature="e#3657#3708#0#PHP" expanded="false" />
+                <element signature="e#3719#3807#0#PHP" expanded="false" />
+                <element signature="e#3775#3807#0#PHP" expanded="false" />
+                <element signature="e#3817#3927#0#PHP" expanded="false" />
+                <element signature="e#3871#3927#0#PHP" expanded="false" />
+                <element signature="e#4041#4081#0#PHP" expanded="false" />
+                <element signature="e#4120#4333#0#PHP" expanded="false" />
+                <element signature="e#4154#4330#0#PHP" expanded="false" />
+                <element signature="e#4227#4326#0#PHP" expanded="false" />
+                <element signature="e#4288#4326#0#PHP" expanded="false" />
+                <element signature="e#4364#4404#0#PHP" expanded="false" />
+                <element signature="e#4764#4982#0#PHP" expanded="false" />
+                <element signature="e#5343#5558#0#PHP" expanded="false" />
+                <element signature="e#5744#5862#0#PHP" expanded="false" />
+                <element signature="e#5803#5858#0#PHP" expanded="false" />
+                <element signature="e#6075#6135#0#PHP" expanded="false" />
+                <element signature="e#6182#6234#0#PHP" expanded="false" />
+                <element signature="e#6995#7070#0#PHP" expanded="false" />
+                <element signature="e#7122#7161#0#PHP" expanded="false" />
+                <element signature="e#7199#7563#0#PHP" expanded="false" />
+                <element signature="e#7244#7559#0#PHP" expanded="false" />
+                <element signature="e#7302#7554#0#PHP" expanded="false" />
+                <element signature="e#7393#7480#0#PHP" expanded="false" />
+                <element signature="e#7785#7828#0#PHP" expanded="false" />
+                <element signature="e#8153#8225#0#PHP" expanded="false" />
+                <element signature="e#8247#8319#0#PHP" expanded="false" />
+                <element signature="e#8341#8413#0#PHP" expanded="false" />
+                <element signature="e#8437#8509#0#PHP" expanded="false" />
+                <element signature="e#8756#8813#0#PHP" expanded="false" />
+                <element signature="e#8960#10038#0#PHP" expanded="false" />
+                <element signature="e#9105#9239#0#PHP" expanded="false" />
+                <element signature="e#9241#9376#0#PHP" expanded="false" />
+                <element signature="e#9378#9507#0#PHP" expanded="false" />
+                <element signature="e#9509#9683#0#PHP" expanded="false" />
+                <element signature="e#9685#9845#0#PHP" expanded="false" />
+                <element signature="e#9847#9994#0#PHP" expanded="false" />
+                <element signature="e#9996#10038#0#PHP" expanded="false" />
+                <element signature="e#10048#10074#0#PHP" expanded="false" />
+                <element signature="e#10201#12919#0#PHP" expanded="false" />
+                <element signature="e#10298#12919#0#PHP" expanded="false" />
+                <element signature="e#10400#12919#0#PHP" expanded="false" />
+                <element signature="e#10507#12919#0#PHP" expanded="false" />
+                <element signature="e#10620#12919#0#PHP" expanded="false" />
+                <element signature="e#10731#12919#0#PHP" expanded="false" />
+                <element signature="e#10842#12919#0#PHP" expanded="false" />
+                <element signature="e#10956#12919#0#PHP" expanded="false" />
+                <element signature="e#11066#12919#0#PHP" expanded="false" />
+                <element signature="e#11176#12919#0#PHP" expanded="false" />
+                <element signature="e#13220#13518#0#PHP" expanded="false" />
+                <element signature="e#13279#13302#0#PHP" expanded="false" />
+                <element signature="e#13313#13518#0#PHP" expanded="false" />
+                <element signature="e#13372#13395#0#PHP" expanded="false" />
+                <element signature="e#13406#13518#0#PHP" expanded="false" />
+                <element signature="e#13464#13514#0#PHP" expanded="false" />
+                <element signature="e#13483#13509#1#PHP" expanded="false" />
+                <element signature="e#13694#13858#0#PHP" expanded="false" />
+                <element signature="e#13735#13788#0#PHP" expanded="false" />
+                <element signature="e#13791#13855#0#PHP" expanded="false" />
+                <element signature="e#13975#14128#0#PHP" expanded="false" />
+                <element signature="e#14281#14434#0#PHP" expanded="false" />
+                <element signature="e#14753#14965#0#PHP" expanded="false" />
+                <element signature="e#14792#14961#0#PHP" expanded="false" />
+                <element signature="e#14924#14961#0#PHP" expanded="false" />
+                <element signature="e#15203#15288#0#PHP" expanded="false" />
+                <element signature="e#15259#15284#0#PHP" expanded="false" />
+                <element signature="n#get_tree_recursion#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Group.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/index/model/Group.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#33#58#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -291,6 +188,8 @@
         <option value="$PROJECT_DIR$/extend/MyImagick.php" />
         <option value="$PROJECT_DIR$/extend/Ico.php" />
         <option value="$PROJECT_DIR$/application/common.php" />
+        <option value="$PROJECT_DIR$/application/index/model/Group.php" />
+        <option value="$PROJECT_DIR$/application/index/model/Base.php" />
       </list>
     </option>
   </component>
@@ -381,6 +280,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -413,7 +313,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="extend" />
+              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,11 +327,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="extend" />
+              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GatewayWorker" />
+              <option name="myItemId" value="index" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,25 +345,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="extend" />
+              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GatewayWorker" />
+              <option name="myItemId" value="index" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Applications" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YourApp" />
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -477,11 +372,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpStudy\WWW\mycode\application\index\model" />
       <recent name="D:\phpStudy\WWW\mycode\extend" />
       <recent name="D:\phpStudy\WWW\mycode\public" />
       <recent name="D:\phpStudy\WWW\mycode\application" />
       <recent name="D:\phpStudy\WWW\mycode\runtime" />
-      <recent name="D:\phpStudy\WWW\mycode" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -606,7 +501,8 @@
       <workItem from="1493194664613" duration="66000" />
       <workItem from="1493194855957" duration="153000" />
       <workItem from="1493277424351" duration="77000" />
-      <workItem from="1493862816560" duration="229000" />
+      <workItem from="1493862816560" duration="2909000" />
+      <workItem from="1494311099541" duration="162000" />
     </task>
     <task id="LOCAL-00001" summary="修改忽略配置">
       <created>1491018681258</created>
@@ -720,16 +616,24 @@
       <option name="project" value="LOCAL" />
       <updated>1493277486454</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="+ GateWorker;&#10;+ layui">
+      <created>1493863123619</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1493863123619</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27666000" />
+    <option name="totallyTimeSpent" value="30508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21149144" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21393643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13965885" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -792,7 +696,8 @@
     <MESSAGE value="+ Class Ico" />
     <MESSAGE value="* Class Ico" />
     <MESSAGE value="+ function download_file" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ function download_file" />
+    <MESSAGE value="+ GateWorker;&#10;+ layui" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ GateWorker;&#10;+ layui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -808,13 +713,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -870,13 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/model/Base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1194,16 +1085,36 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/GatewayWorker/vendor/composer/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home/view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="843" column="0" lean-forward="false" selection-start-line="843" selection-start-column="0" selection-end-line="843" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="894" column="0" lean-forward="true" selection-start-line="894" selection-start-column="0" selection-end-line="894" selection-end-column="0" />
           <folding>
             <element signature="e#252#676#0#PHP" expanded="false" />
             <element signature="e#327#676#0#PHP" expanded="false" />
@@ -1288,31 +1199,26 @@
             <element signature="e#14924#14961#0#PHP" expanded="false" />
             <element signature="e#15203#15288#0#PHP" expanded="false" />
             <element signature="e#15259#15284#0#PHP" expanded="false" />
+            <element signature="n#get_tree_recursion#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/js/index.js">
+    <entry file="file://$PROJECT_DIR$/application/index/model/Base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        <state relative-caret-position="276">
+          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extend/GatewayWorker/vendor/composer/LICENSE">
+    <entry file="file://$PROJECT_DIR$/application/index/model/Group.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/home/view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="391">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#33#58#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

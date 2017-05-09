@@ -21,7 +21,7 @@ class Base extends Model
 {
 	protected $_user = null; //user实例
 
-	public function initialize()
+	protected function initialize()
 	{
 		parent::initialize();
 
