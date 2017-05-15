@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec497bf5-3825-4b9d-acfb-ed5eee64ea29" name="默认" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/index/model/Group.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/common.php" afterPath="$PROJECT_DIR$/application/common.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/model/Base.php" afterPath="$PROJECT_DIR$/application/index/model/Base.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,12 +36,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="common.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="894" column="0" lean-forward="true" selection-start-line="894" selection-start-column="0" selection-end-line="894" selection-end-column="0" />
+            <state relative-caret-position="496">
+              <caret line="962" column="0" lean-forward="true" selection-start-line="962" selection-start-column="0" selection-end-line="962" selection-end-column="0" />
               <folding>
                 <element signature="e#252#676#0#PHP" expanded="false" />
                 <element signature="e#327#676#0#PHP" expanded="false" />
@@ -128,17 +126,17 @@
                 <element signature="e#14924#14961#0#PHP" expanded="false" />
                 <element signature="e#15203#15288#0#PHP" expanded="false" />
                 <element signature="e#15259#15284#0#PHP" expanded="false" />
-                <element signature="n#get_tree_recursion#0;n#!!top" expanded="true" />
+                <element signature="n#number_fmt#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Group.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Group.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index/model/Group.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="e#33#58#0#PHP" expanded="true" />
               </folding>
@@ -187,9 +185,9 @@
         <option value="$PROJECT_DIR$/extend/ImagickService.php" />
         <option value="$PROJECT_DIR$/extend/MyImagick.php" />
         <option value="$PROJECT_DIR$/extend/Ico.php" />
-        <option value="$PROJECT_DIR$/application/common.php" />
         <option value="$PROJECT_DIR$/application/index/model/Group.php" />
         <option value="$PROJECT_DIR$/application/index/model/Base.php" />
+        <option value="$PROJECT_DIR$/application/common.php" />
       </list>
     </option>
   </component>
@@ -280,7 +278,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -359,6 +356,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -502,7 +500,8 @@
       <workItem from="1493194855957" duration="153000" />
       <workItem from="1493277424351" duration="77000" />
       <workItem from="1493862816560" duration="2909000" />
-      <workItem from="1494311099541" duration="162000" />
+      <workItem from="1494311099541" duration="201000" />
+      <workItem from="1494812325932" duration="112000" />
     </task>
     <task id="LOCAL-00001" summary="修改忽略配置">
       <created>1491018681258</created>
@@ -623,17 +622,24 @@
       <option name="project" value="LOCAL" />
       <updated>1493863123619</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="+ Class Group">
+      <created>1494311279392</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1494311279392</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30508000" />
+    <option name="totallyTimeSpent" value="30659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21393643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21638142" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13965885" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -697,7 +703,8 @@
     <MESSAGE value="* Class Ico" />
     <MESSAGE value="+ function download_file" />
     <MESSAGE value="+ GateWorker;&#10;+ layui" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ GateWorker;&#10;+ layui" />
+    <MESSAGE value="+ Class Group" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ Class Group" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1000,75 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="749">
           <caret line="646" column="1" lean-forward="false" selection-start-line="646" selection-start-column="1" selection-end-line="646" selection-end-column="1" />
-          <folding>
-            <element signature="e#7#223#0#PHP" expanded="false" />
-            <element signature="e#387#449#0#PHP" expanded="false" />
-            <element signature="e#535#621#0#PHP" expanded="false" />
-            <element signature="e#889#940#0#PHP" expanded="false" />
-            <element signature="e#1121#1431#0#PHP" expanded="false" />
-            <element signature="e#1161#1415#0#PHP" expanded="false" />
-            <element signature="e#1253#1410#0#PHP" expanded="false" />
-            <element signature="e#1336#1410#0#PHP" expanded="false" />
-            <element signature="e#1667#1741#0#PHP" expanded="false" />
-            <element signature="e#1864#2208#0#PHP" expanded="false" />
-            <element signature="e#2051#2208#0#PHP" expanded="false" />
-            <element signature="e#2212#2461#0#PHP" expanded="false" />
-            <element signature="e#2329#2461#0#PHP" expanded="false" />
-            <element signature="e#2905#3481#0#PHP" expanded="false" />
-            <element signature="e#3205#3272#0#PHP" expanded="false" />
-            <element signature="e#4338#4373#1#PHP" expanded="false" />
-            <element signature="n#resize_to#0;n#ImagickService#0;n#!!top" expanded="false" />
-            <element signature="e#4865#4940#0#PHP" expanded="false" />
-            <element signature="e#4954#5500#0#PHP" expanded="false" />
-            <element signature="e#4973#5490#0#PHP" expanded="false" />
-            <element signature="e#5111#5352#0#PHP" expanded="false" />
-            <element signature="e#5416#5490#0#PHP" expanded="false" />
-            <element signature="e#5504#7175#0#PHP" expanded="false" />
-            <element signature="e#5727#6041#0#PHP" expanded="false" />
-            <element signature="e#5910#6041#0#PHP" expanded="false" />
-            <element signature="e#6208#7114#0#PHP" expanded="false" />
-            <element signature="e#6286#6758#0#PHP" expanded="false" />
-            <element signature="e#6769#7114#0#PHP" expanded="false" />
-            <element signature="e#7179#9490#0#PHP" expanded="false" />
-            <element signature="e#7414#7604#0#PHP" expanded="false" />
-            <element signature="e#7534#7604#0#PHP" expanded="false" />
-            <element signature="e#7610#8722#0#PHP" expanded="false" />
-            <element signature="e#7635#7704#0#PHP" expanded="false" />
-            <element signature="e#7710#7807#0#PHP" expanded="false" />
-            <element signature="e#7813#7901#0#PHP" expanded="false" />
-            <element signature="e#7907#8004#0#PHP" expanded="false" />
-            <element signature="e#8010#8142#0#PHP" expanded="false" />
-            <element signature="e#8148#8264#0#PHP" expanded="false" />
-            <element signature="e#8270#8359#0#PHP" expanded="false" />
-            <element signature="e#8365#8482#0#PHP" expanded="false" />
-            <element signature="e#8488#8596#0#PHP" expanded="false" />
-            <element signature="e#8602#8716#0#PHP" expanded="false" />
-            <element signature="e#8787#9439#0#PHP" expanded="false" />
-            <element signature="e#8865#9217#0#PHP" expanded="false" />
-            <element signature="e#9228#9439#0#PHP" expanded="false" />
-            <element signature="e#9771#10212#0#PHP" expanded="false" />
-            <element signature="e#9904#10109#0#PHP" expanded="false" />
-            <element signature="e#10165#10212#0#PHP" expanded="false" />
-            <element signature="e#10342#10414#0#PHP" expanded="false" />
-            <element signature="e#10417#10503#0#PHP" expanded="false" />
-            <element signature="e#10506#10595#0#PHP" expanded="false" />
-            <element signature="e#10598#10694#0#PHP" expanded="false" />
-            <element signature="e#10698#10911#0#PHP" expanded="false" />
-            <element signature="e#10731#10830#0#PHP" expanded="false" />
-            <element signature="e#10837#10911#0#PHP" expanded="false" />
-            <element signature="e#11276#11403#0#PHP" expanded="false" />
-            <element signature="e#11355#11403#0#PHP" expanded="false" />
-            <element signature="n#output#0;n#ImagickService#0;n#!!top" expanded="false" />
-            <element signature="e#12020#12143#0#PHP" expanded="false" />
-            <element signature="e#12118#12143#0#PHP" expanded="false" />
-            <element signature="e#12186#12283#0#PHP" expanded="false" />
-            <element signature="e#12258#12283#0#PHP" expanded="false" />
-            <element signature="e#12321#12419#0#PHP" expanded="false" />
-            <element signature="e#12393#12419#0#PHP" expanded="false" />
-            <element signature="e#12471#12544#0#PHP" expanded="false" />
-            <element signature="e#12515#12544#0#PHP" expanded="false" />
-            <element signature="n#border#0;n#ImagickService#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1076,7 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,10 +1048,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/model/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/model/Group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#33#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="894" column="0" lean-forward="true" selection-start-line="894" selection-start-column="0" selection-end-line="894" selection-end-column="0" />
+        <state relative-caret-position="496">
+          <caret line="962" column="0" lean-forward="true" selection-start-line="962" selection-start-column="0" selection-end-line="962" selection-end-column="0" />
           <folding>
             <element signature="e#252#676#0#PHP" expanded="false" />
             <element signature="e#327#676#0#PHP" expanded="false" />
@@ -1199,25 +1154,7 @@
             <element signature="e#14924#14961#0#PHP" expanded="false" />
             <element signature="e#15203#15288#0#PHP" expanded="false" />
             <element signature="e#15259#15284#0#PHP" expanded="false" />
-            <element signature="n#get_tree_recursion#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/model/Base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/model/Group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#33#58#0#PHP" expanded="true" />
+            <element signature="n#number_fmt#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

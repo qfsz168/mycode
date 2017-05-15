@@ -960,3 +960,37 @@ function get_tree_recursion($array, $pid)
 
 	return $tree;
 }
+
+/**
+ * 解析参数列表
+ * @author 王崇全
+ * @date
+ * @param string $query 参数列表
+ * @return array 参数列表
+ */
+function query_to_array(string $query)
+{
+	$params = [];
+	$query  = explode("&", trim($query));
+	foreach ($query as $v)
+	{
+		$v = explode("=", trim($v));
+
+		$params[trim($v[0])] = trim($v[1]);
+	}
+
+	return $params;
+}
+
+/**
+ * 格式化数字
+ * @author 王崇全
+ * @date
+ * @param int|float|double $number   数字
+ * @param int              $decimals 小数位数
+ * @return null|string
+ */
+function number_fmt($number, int $decimals = 4)
+{
+	return number_format((float)$number, $decimals, ".", "")??null;
+}
