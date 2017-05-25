@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec497bf5-3825-4b9d-acfb-ed5eee64ea29" name="默认" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/Ffmpeg.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/common.php" afterPath="$PROJECT_DIR$/application/common.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,110 +36,13 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="common.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/common.php">
+    <leaf>
+      <file leaf-file-name="Ffmpeg.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/extend/Ffmpeg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="962" column="0" lean-forward="true" selection-start-line="962" selection-start-column="0" selection-end-line="962" selection-end-column="0" />
-              <folding>
-                <element signature="e#252#676#0#PHP" expanded="false" />
-                <element signature="e#327#676#0#PHP" expanded="false" />
-                <element signature="e#866#914#0#PHP" expanded="false" />
-                <element signature="e#916#979#0#PHP" expanded="false" />
-                <element signature="e#1231#1456#0#PHP" expanded="false" />
-                <element signature="e#1254#1368#0#PHP" expanded="false" />
-                <element signature="e#1262#1367#1#PHP" expanded="false" />
-                <element signature="e#1374#1456#0#PHP" expanded="false" />
-                <element signature="e#1557#1784#0#PHP" expanded="false" />
-                <element signature="e#1613#1781#0#PHP" expanded="false" />
-                <element signature="e#2094#2140#0#PHP" expanded="false" />
-                <element signature="e#2176#2828#0#PHP" expanded="false" />
-                <element signature="e#2267#2760#0#PHP" expanded="false" />
-                <element signature="e#2340#2406#0#PHP" expanded="false" />
-                <element signature="e#2484#2756#0#PHP" expanded="false" />
-                <element signature="e#2616#2756#0#PHP" expanded="false" />
-                <element signature="e#2795#2828#0#PHP" expanded="false" />
-                <element signature="e#3604#3646#0#PHP" expanded="false" />
-                <element signature="e#3657#3708#0#PHP" expanded="false" />
-                <element signature="e#3719#3807#0#PHP" expanded="false" />
-                <element signature="e#3775#3807#0#PHP" expanded="false" />
-                <element signature="e#3817#3927#0#PHP" expanded="false" />
-                <element signature="e#3871#3927#0#PHP" expanded="false" />
-                <element signature="e#4041#4081#0#PHP" expanded="false" />
-                <element signature="e#4120#4333#0#PHP" expanded="false" />
-                <element signature="e#4154#4330#0#PHP" expanded="false" />
-                <element signature="e#4227#4326#0#PHP" expanded="false" />
-                <element signature="e#4288#4326#0#PHP" expanded="false" />
-                <element signature="e#4364#4404#0#PHP" expanded="false" />
-                <element signature="e#4764#4982#0#PHP" expanded="false" />
-                <element signature="e#5343#5558#0#PHP" expanded="false" />
-                <element signature="e#5744#5862#0#PHP" expanded="false" />
-                <element signature="e#5803#5858#0#PHP" expanded="false" />
-                <element signature="e#6075#6135#0#PHP" expanded="false" />
-                <element signature="e#6182#6234#0#PHP" expanded="false" />
-                <element signature="e#6995#7070#0#PHP" expanded="false" />
-                <element signature="e#7122#7161#0#PHP" expanded="false" />
-                <element signature="e#7199#7563#0#PHP" expanded="false" />
-                <element signature="e#7244#7559#0#PHP" expanded="false" />
-                <element signature="e#7302#7554#0#PHP" expanded="false" />
-                <element signature="e#7393#7480#0#PHP" expanded="false" />
-                <element signature="e#7785#7828#0#PHP" expanded="false" />
-                <element signature="e#8153#8225#0#PHP" expanded="false" />
-                <element signature="e#8247#8319#0#PHP" expanded="false" />
-                <element signature="e#8341#8413#0#PHP" expanded="false" />
-                <element signature="e#8437#8509#0#PHP" expanded="false" />
-                <element signature="e#8756#8813#0#PHP" expanded="false" />
-                <element signature="e#8960#10038#0#PHP" expanded="false" />
-                <element signature="e#9105#9239#0#PHP" expanded="false" />
-                <element signature="e#9241#9376#0#PHP" expanded="false" />
-                <element signature="e#9378#9507#0#PHP" expanded="false" />
-                <element signature="e#9509#9683#0#PHP" expanded="false" />
-                <element signature="e#9685#9845#0#PHP" expanded="false" />
-                <element signature="e#9847#9994#0#PHP" expanded="false" />
-                <element signature="e#9996#10038#0#PHP" expanded="false" />
-                <element signature="e#10048#10074#0#PHP" expanded="false" />
-                <element signature="e#10201#12919#0#PHP" expanded="false" />
-                <element signature="e#10298#12919#0#PHP" expanded="false" />
-                <element signature="e#10400#12919#0#PHP" expanded="false" />
-                <element signature="e#10507#12919#0#PHP" expanded="false" />
-                <element signature="e#10620#12919#0#PHP" expanded="false" />
-                <element signature="e#10731#12919#0#PHP" expanded="false" />
-                <element signature="e#10842#12919#0#PHP" expanded="false" />
-                <element signature="e#10956#12919#0#PHP" expanded="false" />
-                <element signature="e#11066#12919#0#PHP" expanded="false" />
-                <element signature="e#11176#12919#0#PHP" expanded="false" />
-                <element signature="e#13220#13518#0#PHP" expanded="false" />
-                <element signature="e#13279#13302#0#PHP" expanded="false" />
-                <element signature="e#13313#13518#0#PHP" expanded="false" />
-                <element signature="e#13372#13395#0#PHP" expanded="false" />
-                <element signature="e#13406#13518#0#PHP" expanded="false" />
-                <element signature="e#13464#13514#0#PHP" expanded="false" />
-                <element signature="e#13483#13509#1#PHP" expanded="false" />
-                <element signature="e#13694#13858#0#PHP" expanded="false" />
-                <element signature="e#13735#13788#0#PHP" expanded="false" />
-                <element signature="e#13791#13855#0#PHP" expanded="false" />
-                <element signature="e#13975#14128#0#PHP" expanded="false" />
-                <element signature="e#14281#14434#0#PHP" expanded="false" />
-                <element signature="e#14753#14965#0#PHP" expanded="false" />
-                <element signature="e#14792#14961#0#PHP" expanded="false" />
-                <element signature="e#14924#14961#0#PHP" expanded="false" />
-                <element signature="e#15203#15288#0#PHP" expanded="false" />
-                <element signature="e#15259#15284#0#PHP" expanded="false" />
-                <element signature="n#number_fmt#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Group.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/model/Group.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#33#58#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -278,6 +181,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,6 +202,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mycode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,8 +275,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,8 +287,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\phpStudy\WWW\mycode\application\index\model" />
       <recent name="D:\phpStudy\WWW\mycode\extend" />
+      <recent name="D:\phpStudy\WWW\mycode\application\index\model" />
       <recent name="D:\phpStudy\WWW\mycode\public" />
       <recent name="D:\phpStudy\WWW\mycode\application" />
       <recent name="D:\phpStudy\WWW\mycode\runtime" />
@@ -501,7 +418,8 @@
       <workItem from="1493277424351" duration="77000" />
       <workItem from="1493862816560" duration="2909000" />
       <workItem from="1494311099541" duration="201000" />
-      <workItem from="1494812325932" duration="112000" />
+      <workItem from="1494812325932" duration="769000" />
+      <workItem from="1495697934476" duration="41000" />
     </task>
     <task id="LOCAL-00001" summary="修改忽略配置">
       <created>1491018681258</created>
@@ -629,17 +547,24 @@
       <option name="project" value="LOCAL" />
       <updated>1494311279392</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="+ function query_to_array、number_fmt">
+      <created>1494812484875</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1494812484875</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30659000" />
+    <option name="totallyTimeSpent" value="31357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21638142" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21882641" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13965885" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -704,7 +629,8 @@
     <MESSAGE value="+ function download_file" />
     <MESSAGE value="+ GateWorker;&#10;+ layui" />
     <MESSAGE value="+ Class Group" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ Class Group" />
+    <MESSAGE value="+ function query_to_array、number_fmt" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ function query_to_array、number_fmt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -720,13 +646,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1068,8 +987,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="962" column="0" lean-forward="true" selection-start-line="962" selection-start-column="0" selection-end-line="962" selection-end-column="0" />
+        <state relative-caret-position="542">
+          <caret line="982" column="1" lean-forward="true" selection-start-line="982" selection-start-column="1" selection-end-line="982" selection-end-column="1" />
           <folding>
             <element signature="e#252#676#0#PHP" expanded="false" />
             <element signature="e#327#676#0#PHP" expanded="false" />
@@ -1156,6 +1075,14 @@
             <element signature="e#15259#15284#0#PHP" expanded="false" />
             <element signature="n#number_fmt#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/Ffmpeg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
