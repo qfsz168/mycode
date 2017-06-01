@@ -56,7 +56,7 @@ class IndexController
 		$http_worker->count = 4;
 
 		// 接收到浏览器发送的数据时回复hello world给浏览器
-		$http_worker->onMessage = function($connection, $data)
+		$http_worker->onMessage = function ($connection, $data)
 		{
 			// 向浏览器发送hello world
 			$connection->send('hello world');
@@ -64,6 +64,16 @@ class IndexController
 
 		// 运行worker
 		\Workerman\Worker::runAll();
+	}
+
+	public function SendMail()
+	{
+		$mail = new \Email('smtp.exmail.qq.com', 465, "Waln370828", 'wangchongquan@hacfin.com', "王崇全1");
+		$mail->sendMail("测试邮件", '这是一封测试邮件', [
+			'qfsz168@163.com',
+			'591572471@qq.com',
+		], '/mnt/volume1/files/2017/6/1/11/30e7b93b-a444-8a78-518d-af9bd71c37d2_thumb/200', "tupian.png");
+		die();
 	}
 
 

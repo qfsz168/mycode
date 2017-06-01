@@ -28,7 +28,7 @@
         "topthink/think-queue": "^1.0",
         "topthink/think-testing": "^1.0",
         "elasticsearch/elasticsearch": " ~5.0",
-        "swiftmailer/swiftmailer": " ^5.4",
+        "swiftmailer/swiftmailer": "^6.0",
         "mustangostang/spyc": " 0.5.*",
         "phpoffice/phpexcel": "1.8.*"
     },
