@@ -280,7 +280,7 @@ class TcpConnection extends ConnectionInterface
 
         // Attempt to send data directly.
         if ($this->_sendBuffer === '') {
-            $len = @fwrite($this->_socket, $send_buffer);
+            $len = @fwrite($this->_socket, $send_buffer, 8192);
             // send successful.
             if ($len === strlen($send_buffer)) {
                 return true;
@@ -387,21 +387,26 @@ class TcpConnection extends ConnectionInterface
     {
         // SSL handshake.
         if ($this->transport === 'ssl' && $this->_sslHandshakeCompleted !== true) {
-            stream_set_blocking($socket, true);
-            stream_set_timeout($socket, 1);
-            $ret = stream_socket_enable_crypto($socket, true, STREAM_CRYPTO_METHOD_SSLv23_SERVER);
-            if(!$ret) {
-                echo new \Exception('ssl handshake fail, stream_socket_enable_crypto return ' . var_export($ret, true));
+            $ret = stream_socket_enable_crypto($socket, true, STREAM_CRYPTO_METHOD_SSLv2_SERVER |
+                STREAM_CRYPTO_METHOD_SSLv3_SERVER | STREAM_CRYPTO_METHOD_SSLv23_SERVER);
+            // Negotiation has failed.
+            if(false === $ret) {
+                if (!feof($socket)) {
+                    echo "\nSSL Handshake fail. \nBuffer:".bin2hex(fread($socket, 8182))."\n";
+                }
                 return $this->destroy();
+            } elseif(0 === $ret) {
+                // There isn't enough data and should try again.
+                return;
             }
             if (isset($this->onSslHandshake)) {
                 try {
                     call_user_func($this->onSslHandshake, $this);
                 } catch (\Exception $e) {
-                    self::log($e);
+                    Worker::log($e);
                     exit(250);
                 } catch (\Error $e) {
-                    self::log($e);
+                    Worker::log($e);
                     exit(250);
                 }
             }
@@ -514,7 +519,7 @@ class TcpConnection extends ConnectionInterface
      */
     public function baseWrite()
     {
-        $len = @fwrite($this->_socket, $this->_sendBuffer);
+        $len = @fwrite($this->_socket, $this->_sendBuffer, 8192);
         if ($len === strlen($this->_sendBuffer)) {
             Worker::$globalEvent->del($this->_socket, EventInterface::EV_WRITE);
             $this->_sendBuffer = '';

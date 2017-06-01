@@ -106,8 +106,10 @@ class AsyncTcpConnection extends TcpConnection
     {
         $address_info = parse_url($remote_address);
         if (!$address_info) {
-            echo new \Exception('bad remote_address');
-            $this->_remoteAddress = $remote_address;
+            list($scheme, $this->_remoteAddress) = explode(':', $remote_address, 2);
+            if (!$this->_remoteAddress) {
+                echo new \Exception('bad remote_address');
+            }
         } else {
             if (!isset($address_info['port'])) {
                 $address_info['port'] = 80;
@@ -275,8 +277,9 @@ class AsyncTcpConnection extends TcpConnection
             if ($this->_sendBuffer) {
                 Worker::$globalEvent->add($socket, EventInterface::EV_WRITE, array($this, 'baseWrite'));
             }
-            $this->_status        = self::STATUS_ESTABLISH;
-            $this->_remoteAddress = $address;
+            $this->_status                = self::STATUS_ESTABLISH;
+            $this->_remoteAddress         = $address;
+            $this->_sslHandshakeCompleted = true;
 
             // Try to emit onConnect callback.
             if ($this->onConnect) {

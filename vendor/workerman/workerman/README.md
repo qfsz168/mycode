@@ -2,10 +2,9 @@
 [![Gitter](https://badges.gitter.im/walkor/Workerman.svg)](https://gitter.im/walkor/Workerman?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
 
 ## What is it
-Workerman is an asynchronous event driven PHP framework with high performance for easily building fast, scalable network applications.Supports HTTP, Websocket and other custom protocols. Supports libevent, HHVM, [ReactPHP](https://github.com/reactphp/react).
+Workerman is an asynchronous event driven PHP framework with high performance for easily building fast, scalable network applications. Supports HTTP, Websocket, SSL and other custom protocols. Supports libevent, [HHVM](https://github.com/facebook/hhvm) , [ReactPHP](https://github.com/reactphp/react).
 
 ## Requires
-
 PHP 5.3 or Higher  
 A POSIX compatible operating system (Linux, OSX, BSD)  
 POSIX and PCNTL extensions for PHP  
@@ -124,6 +123,36 @@ $tcp_worker->onMessage = function($connection, $data)
 $tcp_worker->onClose = function($connection)
 {
     echo "Connection closed\n";
+};
+
+Worker::runAll();
+```
+
+### Enable SSL.
+```php
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+use Workerman\Worker;
+
+// SSL context.
+$context = array(
+    'ssl' => array(
+        'local_cert' => '/your/path/of/server.pem',
+        'local_pk'   => '/your/path/of/server.key',
+    )
+);
+
+// Create a Websocket server with ssl context.
+$ws_worker = new Worker("websocket://0.0.0.0:2346", $context);
+
+// Enable SSL. WebSocket+SSL means that Secure WebSocket (wss://). 
+// The similar approaches for Https etc.
+$ws_worker->transport = 'ssl';
+
+$ws_worker->onMessage = function($connection, $data)
+{
+    // Send hello $data
+    $connection->send('hello ' . $data);
 };
 
 Worker::runAll();
