@@ -61,19 +61,19 @@ class Auth
 		'auth_on'           => true,
 
 		// 认证方式，1为实时认证；2为登录认证。
-		'auth_type'         => 2,
+		'auth_type'         => 1,
 
 		// 用户组数据表名
-		'auth_group'        => 'auth_group',
+		'auth_group'        => 'mz_auth_group',
 
 		// 用户-用户组关系表
-		'auth_group_access' => 'auth_group_access',
+		'auth_group_access' => 'mz_auth_group_access',
 
 		// 权限规则表
-		'auth_rule'         => 'auth_rule',
+		'auth_rule'         => 'mz_auth_rule',
 
 		// 用户信息表
-		'auth_user'         => 'auth_member',
+		'auth_user'         => 'mz_user',
 	];
 
 	public function __construct()
@@ -93,7 +93,7 @@ class Auth
 	 * @param string       $relation 如果为 'or' 表示满足任一条规则即通过验证;如果为 'and'则表示需满足所有规则才能通过验证
 	 * @return boolean 通过验证返回true;失败返回false
 	 */
-	public function check($name, $uid, $type = 1, $mode = 'url', $relation = 'or')
+	public function check($name, $uid, $type = 1, $relation = 'or', $mode = 'url')
 	{
 		if (!$this->config['auth_on'])
 		{
