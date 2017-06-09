@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec497bf5-3825-4b9d-acfb-ed5eee64ea29" name="默认" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -350,7 +347,7 @@
       <workItem from="1495697934476" duration="78000" />
       <workItem from="1496296825569" duration="861000" />
       <workItem from="1496297850401" duration="350000" />
-      <workItem from="1496825526752" duration="390000" />
+      <workItem from="1496825526752" duration="435000" />
     </task>
     <task id="LOCAL-00001" summary="修改忽略配置">
       <created>1491018681258</created>
@@ -513,11 +510,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496825630535</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="* gitignore">
+      <created>1496825950336</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1496825950336</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32995000" />
+    <option name="totallyTimeSpent" value="33040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
@@ -592,7 +596,8 @@
     <MESSAGE value="+ class Email" />
     <MESSAGE value="* composer update" />
     <MESSAGE value="* class Auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="* class Auth" />
+    <MESSAGE value="* gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="* gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
