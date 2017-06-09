@@ -4,14 +4,5 @@
 
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule ^(.*)$ index.php?/$1 [QSA,PT,L]
+  RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
 </IfModule>
-
-#在服务器设置字符集
-<FilesMatch "\.(htm|html)$">
-    ForceType 'text/html; charset=UTF-8'
-</FilesMatch>
-
-#安全相关
-#屏蔽浏览网站目录列表
-Options All -Indexes
