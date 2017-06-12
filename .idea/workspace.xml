@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec497bf5-3825-4b9d-acfb-ed5eee64ea29" name="默认" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/Compress.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/extend/ZipArchiveImproved.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +38,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -82,6 +84,9 @@
         <option value="$PROJECT_DIR$/extend/Email.php" />
         <option value="$PROJECT_DIR$/extend/Auth.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/extend/Compresse.php" />
+        <option value="$PROJECT_DIR$/extend/ZipArchiveImproved.php" />
+        <option value="$PROJECT_DIR$/extend/Compress.php" />
       </list>
     </option>
   </component>
@@ -174,7 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,9 +201,38 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,10 +245,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\phpStudy\WWW\mycode\vendor" />
-      <recent name="D:\phpStudy\WWW\mycode" />
       <recent name="D:\phpStudy\WWW\mycode\extend" />
       <recent name="D:\phpStudy\WWW\mycode\application\index\model" />
+      <recent name="D:\phpStudy\WWW\mycode\vendor" />
+      <recent name="D:\phpStudy\WWW\mycode" />
       <recent name="D:\phpStudy\WWW\mycode\public" />
     </key>
   </component>
@@ -348,6 +381,8 @@
       <workItem from="1496296825569" duration="861000" />
       <workItem from="1496297850401" duration="350000" />
       <workItem from="1496825526752" duration="435000" />
+      <workItem from="1496999121334" duration="171000" />
+      <workItem from="1497231843774" duration="915000" />
     </task>
     <task id="LOCAL-00001" summary="修改忽略配置">
       <created>1491018681258</created>
@@ -517,16 +552,23 @@
       <option name="project" value="LOCAL" />
       <updated>1496825950336</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="+ model Auth">
+      <created>1496999204011</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1496999204011</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33040000" />
+    <option name="totallyTimeSpent" value="34126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22799511" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23410758" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13965885" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -597,7 +639,8 @@
     <MESSAGE value="* composer update" />
     <MESSAGE value="* class Auth" />
     <MESSAGE value="* gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="* gitignore" />
+    <MESSAGE value="+ model Auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ model Auth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -613,28 +656,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extend/data/DataPdf.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -737,13 +758,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/.htaccess" />
     <entry file="file://$PROJECT_DIR$/extend/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -780,13 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="978" column="9" lean-forward="false" selection-start-line="978" selection-start-column="9" selection-end-line="978" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/Workerman/Worker.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/pthreads/pthreads.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -795,13 +803,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/http_test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/http_test.php" />
     <entry file="file://$PROJECT_DIR$/vendor/workerman/workerman/Worker.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -887,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -918,9 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
           <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-          <folding>
-            <element signature="n#sendMail#0;n#Email#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -928,7 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,7 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -944,7 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="754">
           <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,36 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="182" column="7" lean-forward="true" selection-start-line="182" selection-start-column="7" selection-end-line="182" selection-end-column="7" />
-          <folding>
-            <element signature="e#2489#2634#0#PHP" expanded="false" />
-            <element signature="n#check#0;n#Auth#0;n#!!top" expanded="true" />
-            <element signature="e#3323#3372#0#PHP" expanded="false" />
-            <element signature="e#3725#4194#0#PHP" expanded="false" />
-            <element signature="e#3810#4190#0#PHP" expanded="false" />
-            <element signature="e#4015#4118#0#PHP" expanded="false" />
-            <element signature="e#4132#4190#0#PHP" expanded="false" />
-            <element signature="e#4197#4261#0#PHP" expanded="false" />
-            <element signature="e#4300#4364#0#PHP" expanded="false" />
-            <element signature="e#4675#4733#0#PHP" expanded="false" />
-            <element signature="e#4752#4948#0#PHP" expanded="false" />
-            <element signature="e#4752#5008#0#PHP" expanded="false" />
-            <element signature="e#4960#5007#1#PHP" expanded="false" />
-            <element signature="n#getAuthList#0;n#Auth#0;n#!!top" expanded="true" />
-            <element signature="e#5414#5484#0#PHP" expanded="false" />
-            <element signature="e#5487#5617#0#PHP" expanded="false" />
-            <element signature="e#5709#5807#0#PHP" expanded="false" />
-            <element signature="e#5839#5907#0#PHP" expanded="false" />
-            <element signature="e#5917#6005#0#PHP" expanded="false" />
-            <element signature="e#5934#5960#1#PHP" expanded="false" />
-            <element signature="e#6034#6087#0#PHP" expanded="false" />
-            <element signature="e#6034#6116#0#PHP" expanded="false" />
-            <element signature="e#6172#6570#0#PHP" expanded="false" />
-            <element signature="e#6205#6566#0#PHP" expanded="false" />
-            <element signature="e#6497#6566#0#PHP" expanded="false" />
-            <element signature="e#6608#6720#0#PHP" expanded="false" />
-            <element signature="e#6905#7042#0#PHP" expanded="false" />
-            <element signature="e#6959#7024#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -989,6 +954,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/model/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/zip/zip.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/ZipArchiveImproved.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/Compress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="69" column="25" lean-forward="true" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+          <folding>
+            <element signature="e#7#95#0#PHP" expanded="false" />
+            <element signature="e#115#262#0#PHP" expanded="true" />
+            <element signature="n#CompressZip#0;n#Compress#0;n#!!top" expanded="true" />
+            <element signature="n#open#0;n#ZipArchiveImproved#0;n#!!top" expanded="true" />
+            <element signature="n#addFile#0;n#ZipArchiveImproved#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="250" column="19" lean-forward="false" selection-start-line="250" selection-start-column="3" selection-end-line="250" selection-end-column="19" />
           <folding />
         </state>
       </provider>
