@@ -994,3 +994,62 @@ function number_fmt($number, int $decimals = 4)
 {
 	return number_format((float)$number, $decimals, ".", "")??null;
 }
+
+function rmBOM(string $string)
+{
+	if (substr($string, 0, 3) == pack('CCC', 0xef, 0xbb, 0xbf))
+	{
+		$string = substr($string, 3);
+	}
+
+	return $string;
+}
+
+function p($params)
+{
+	print_r("<pre>");
+	print_r($params);
+	print_r("</pre>");
+}
+
+/**
+ * 笛卡尔积
+ * @author 王崇全
+ * @date
+ * eg: [[1,2],[3,4]] --> [[1,3],[1,4],[2,3],[2,4]]
+ * @param array $arr 将数组的各项值做笛卡尔积
+ * @return array
+ */
+function cartesian_product(array $arr)
+{
+	//取出$arr的第一项
+	$result = array_shift($arr);
+	if (!$result)
+	{
+		return [];
+	}
+
+	//依次取出$arr的之后各项
+	while ($arr2 = array_shift($arr))
+	{
+		$arr1   = $result;
+		$result = array();
+		foreach ($arr1 as $v)
+		{
+			foreach ($arr2 as $v2)
+			{
+				if (!is_array($v))
+				{
+					$v = array($v);
+				}
+				if (!is_array($v2))
+				{
+					$v2 = array($v2);
+				}
+				$result[] = array_merge_recursive($v, $v2);
+			}
+		}
+	}
+
+	return $result??[];
+}

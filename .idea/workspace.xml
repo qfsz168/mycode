@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec497bf5-3825-4b9d-acfb-ed5eee64ea29" name="默认" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend/Compress.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/extend/ZipArchiveImproved.php" afterPath="" />
+    <list default="true" id="ec497bf5-3825-4b9d-acfb-ed5eee64ea29" name="默认" comment="+ function">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/common.php" afterPath="$PROJECT_DIR$/application/common.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,7 +37,20 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="common.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/common.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="1022" column="26" lean-forward="false" selection-start-line="1022" selection-start-column="9" selection-end-line="1022" selection-end-column="26" />
+              <folding>
+                <element signature="e#18314#18411#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -79,7 +91,6 @@
         <option value="$PROJECT_DIR$/extend/Ico.php" />
         <option value="$PROJECT_DIR$/application/index/model/Group.php" />
         <option value="$PROJECT_DIR$/application/index/model/Base.php" />
-        <option value="$PROJECT_DIR$/application/common.php" />
         <option value="$PROJECT_DIR$/application/index/controller/IndexController.php" />
         <option value="$PROJECT_DIR$/extend/Email.php" />
         <option value="$PROJECT_DIR$/extend/Auth.php" />
@@ -87,6 +98,7 @@
         <option value="$PROJECT_DIR$/extend/Compresse.php" />
         <option value="$PROJECT_DIR$/extend/ZipArchiveImproved.php" />
         <option value="$PROJECT_DIR$/extend/Compress.php" />
+        <option value="$PROJECT_DIR$/application/common.php" />
       </list>
     </option>
   </component>
@@ -382,7 +394,8 @@
       <workItem from="1496297850401" duration="350000" />
       <workItem from="1496825526752" duration="435000" />
       <workItem from="1496999121334" duration="171000" />
-      <workItem from="1497231843774" duration="915000" />
+      <workItem from="1497231843774" duration="948000" />
+      <workItem from="1497577889751" duration="74000" />
     </task>
     <task id="LOCAL-00001" summary="修改忽略配置">
       <created>1491018681258</created>
@@ -559,16 +572,24 @@
       <option name="project" value="LOCAL" />
       <updated>1496999204011</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="+ Compress">
+      <created>1497232778818</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1497232778818</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34126000" />
+    <option name="totallyTimeSpent" value="34233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23410758" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23716381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13965885" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -640,7 +661,8 @@
     <MESSAGE value="* class Auth" />
     <MESSAGE value="* gitignore" />
     <MESSAGE value="+ model Auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ model Auth" />
+    <MESSAGE value="+ Compress" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ Compress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -878,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="982" column="1" lean-forward="true" selection-start-line="982" selection-start-column="1" selection-end-line="982" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extend/Ffmpeg.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -961,7 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -969,18 +983,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extend/ZipArchiveImproved.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/ZipArchiveImproved.php" />
     <entry file="file://$PROJECT_DIR$/extend/Compress.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -1000,6 +1006,16 @@
         <state relative-caret-position="190">
           <caret line="250" column="19" lean-forward="false" selection-start-line="250" selection-start-column="3" selection-end-line="250" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="1022" column="26" lean-forward="false" selection-start-line="1022" selection-start-column="9" selection-end-line="1022" selection-end-column="26" />
+          <folding>
+            <element signature="e#18314#18411#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
